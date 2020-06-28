@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="characteristic_array">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="gear_array">
+        <item>Weapon</item>
+        <item>Armor</item>
+        <item>Gear</item>
+    </string-array>
+    <string-array name="skill_attribute_array">
+        <item>BR</item>
+        <item>AG</item>
+        <item>INT</item>
+        <item>CUN</item>
+        <item>WILL</item>
+        <item>PR</item>
+    </string-array>
+    <string-array name="skill_rank_array">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+</resources>

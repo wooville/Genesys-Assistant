@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp" app:cardCornerRadius="10dp">
+    <RelativeLayout android:padding="8dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="4dp">
+        <Button android:id="@+id/delete_gear_btn" android:background="@android:drawable/ic_delete" android:layout_width="30dp" android:layout_height="30dp" android:layout_alignParentRight="true"/>
+        <com.google.android.material.textfield.TextInputLayout android:textSize="20sp" android:textStyle="bold" android:textColorHint="@color/colorPrimaryDark" android:id="@+id/gearNameLayout" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="100dp" android:hint="Name">
+            <com.google.android.material.textfield.TextInputEditText android:textColor="@android:color/black" android:id="@+id/gearNameInput" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:inputType="text"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <Spinner android:gravity="center" android:id="@+id/gearTypeInput" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/gearNameLayout" android:layout_alignParentRight="true"/>
+        <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="@color/colorPrimaryDark" android:id="@+id/gearDescriptionHead" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/gear_description" android:layout_below="@+id/gearTypeInput"/>
+        <EditText android:textStyle="italic" android:id="@+id/gearDescriptionInput" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_below="@+id/gearDescriptionHead" android:inputType="textMultiLine"/>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

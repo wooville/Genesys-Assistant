@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp" app:cardBackgroundColor="@color/colorPrimaryDark" app:cardCornerRadius="10dp">
+    <RelativeLayout android:padding="8dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="4dp">
+        <Button android:id="@+id/delete_talent_btn" android:background="@android:drawable/ic_delete" android:layout_width="30dp" android:layout_height="30dp" android:layout_alignParentRight="true"/>
+        <com.google.android.material.textfield.TextInputLayout android:textSize="20sp" android:textStyle="bold" android:textColorHint="@android:color/white" android:id="@+id/talentNameLayout" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Talent Name" android:layout_below="@+id/delete_talent_btn">
+            <com.google.android.material.textfield.TextInputEditText android:textColor="@android:color/white" android:id="@+id/talentNameView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:inputType="text"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="@android:color/white" android:id="@+id/talentDescriptionHead" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Talent Description:" android:layout_below="@+id/talentNameLayout"/>
+        <EditText android:textStyle="italic" android:textColor="@android:color/white" android:gravity="top|left|center_vertical|center_horizontal|center|start" android:id="@+id/talentDescriptionInput" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:ems="10" android:layout_below="@+id/talentDescriptionHead" android:inputType="textMultiLine"/>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/scrollView" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+    <LinearLayout android:orientation="vertical" android:id="@+id/linearLayout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="15dp">
+        <com.google.android.material.textfield.TextInputLayout android:textColorHint="@color/colorPrimaryDark" android:id="@+id/text_input_mot_str_head_layout" android:paddingTop="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputEditText android:id="@+id/text_input_mot_str_head" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/mot_str_hint" android:inputType="text"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <EditText android:gravity="top|left|center_vertical|center_horizontal|center|start" android:id="@+id/text_input_mot_str_field" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:ems="10" android:inputType="textMultiLine"/>
+        <com.google.android.material.textfield.TextInputLayout android:textColorHint="@color/colorPrimaryDark" android:id="@+id/text_input_mot_flaw_head_layout" android:paddingTop="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputEditText android:id="@+id/text_input_mot_flaw_head" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/mot_flaw_hint" android:inputType="text"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <EditText android:gravity="top|left|center_vertical|center_horizontal|center|start" android:id="@+id/text_input_mot_flaw_field" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:ems="10" android:inputType="textMultiLine"/>
+        <com.google.android.material.textfield.TextInputLayout android:textColorHint="@color/colorPrimaryDark" android:id="@+id/text_input_mot_des_head_layout" android:paddingTop="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputEditText android:id="@+id/text_input_mot_des_head" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/mot_des_hint" android:inputType="text"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <EditText android:gravity="top|left|center_vertical|center_horizontal|center|start" android:id="@+id/text_input_mot_des_field" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:ems="10" android:inputType="textMultiLine"/>
+        <com.google.android.material.textfield.TextInputLayout android:textColorHint="@color/colorPrimaryDark" android:id="@+id/text_input_mot_fear_head_layout" android:paddingTop="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputEditText android:id="@+id/text_input_mot_fear_head" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/mot_fear_hint" android:inputType="text"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <EditText android:gravity="top|left|center_vertical|center_horizontal|center|start" android:id="@+id/text_input_mot_fear_field" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:ems="10" android:inputType="textMultiLine"/>
+    </LinearLayout>
+</ScrollView>

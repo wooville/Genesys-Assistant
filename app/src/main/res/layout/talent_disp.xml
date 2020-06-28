@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp" app:cardBackgroundColor="@color/colorPrimaryDark" app:cardCornerRadius="10dp">
+    <RelativeLayout android:padding="8dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="4dp">
+        <TextView android:textSize="20sp" android:textStyle="bold" android:textColor="@android:color/white" android:id="@+id/talentNameView" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Talent Name" android:layout_alignParentTop="true"/>
+        <TextView android:textAppearance="@style/TextAppearance.AppCompat.Medium" android:textStyle="italic" android:textColor="@android:color/white" android:id="@+id/talentDescription" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Talent Description" android:layout_below="@+id/talentNameView"/>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/scrollView" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+    <RelativeLayout android:orientation="vertical" android:id="@+id/linearLayout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.appcompat.widget.AppCompatImageButton android:id="@+id/select_char_img" android:background="@android:color/darker_gray" android:layout_width="match_parent" android:layout_height="400dp" android:scaleType="centerCrop"/>
+        <TextView android:textSize="20sp" android:textStyle="bold" android:textColor="@android:color/black" android:gravity="center" android:id="@+id/under_img_text" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/image_select_text" android:layout_below="@+id/select_char_img"/>
+        <TableLayout android:id="@+id/characteristic_table_input" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:stretchColumns="0,1,2,3,4,5" android:layout_below="@+id/under_img_text">
+            <TableRow>
+                <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:textColor="@android:color/white" android:gravity="center" android:background="@color/colorPrimary" android:layout_width="0dp" android:layout_margin="1dp" android:layout_column="0" android:text="@string/brawn_tag" android:layout_weight="0.167"/>
+                <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:textColor="@android:color/white" android:gravity="center" android:background="@color/colorPrimary" android:layout_width="0dp" android:layout_margin="1dp" android:layout_column="1" android:text="@string/agility_tag" android:layout_weight="0.167"/>
+                <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:textColor="@android:color/white" android:gravity="center" android:background="@color/colorPrimary" android:layout_width="0dp" android:layout_margin="1dp" android:layout_column="2" android:text="@string/intellect_tag" android:layout_weight="0.167"/>
+                <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:textColor="@android:color/white" android:gravity="center" android:background="@color/colorPrimary" android:layout_width="0dp" android:layout_margin="1dp" android:layout_column="3" android:text="@string/cunning_tag" android:layout_weight="0.167"/>
+                <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:textColor="@android:color/white" android:gravity="center" android:background="@color/colorPrimary" android:layout_width="0dp" android:layout_margin="1dp" android:layout_column="4" android:text="@string/willpower_tag" android:layout_weight="0.167"/>
+                <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:textColor="@android:color/white" android:gravity="center" android:background="@color/colorPrimary" android:layout_width="0dp" android:layout_margin="1dp" android:layout_column="5" android:text="@string/presence_tag" android:layout_weight="0.167"/>
+            </TableRow>
+            <TableRow>
+                <Spinner android:gravity="center" android:id="@+id/br_spin" android:background="@null" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_column="0"/>
+                <Spinner android:gravity="center" android:id="@+id/ag_spin" android:background="@null" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_column="1"/>
+                <Spinner android:gravity="center" android:id="@+id/int_spin" android:background="@null" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_column="2"/>
+                <Spinner android:gravity="center" android:id="@+id/cun_spin" android:background="@null" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_column="3"/>
+                <Spinner android:gravity="center" android:id="@+id/will_spin" android:background="@null" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_column="4"/>
+                <Spinner android:gravity="center" android:id="@+id/pr_spin" android:background="@null" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_column="5"/>
+            </TableRow>
+        </TableLayout>
+        <com.google.android.material.textfield.TextInputLayout android:textColorHint="@color/colorPrimaryDark" android:id="@+id/char_name_input_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/characteristic_table_input">
+            <com.google.android.material.textfield.TextInputEditText android:id="@+id/char_name_input" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/name" android:inputType="text" android:imeOptions="actionDone"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout android:textColorHint="@color/colorPrimaryDark" android:id="@+id/archetype_input_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/char_name_input_layout">
+            <com.google.android.material.textfield.TextInputEditText android:id="@+id/archetype_input" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/archetype" android:inputType="text" android:imeOptions="actionDone"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout android:textColorHint="@color/colorPrimaryDark" android:id="@+id/career_input_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/archetype_input_layout">
+            <com.google.android.material.textfield.TextInputEditText android:id="@+id/career_input" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/career" android:inputType="text" android:imeOptions="actionDone"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout android:textColorHint="@color/colorPrimaryDark" android:id="@+id/xp_input_layout" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_below="@+id/career_input_layout" android:layout_centerInParent="true">
+            <com.google.android.material.textfield.TextInputEditText android:gravity="center" android:id="@+id/xp_input" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/xp" android:inputType="number" android:imeOptions="actionDone"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <TableLayout android:id="@+id/wound_table_input" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:stretchColumns="0,1" android:layout_below="@+id/xp_input_layout">
+            <TableRow>
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:textColor="@android:color/white" android:gravity="center" android:background="@color/colorPrimary" android:layout_width="0dp" android:layout_margin="1dp" android:layout_column="0" android:text="@string/wound_threshold" android:layout_weight="0.167"/>
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:textColor="@android:color/white" android:gravity="center" android:background="@color/colorPrimaryDark" android:layout_width="0dp" android:layout_margin="1dp" android:layout_column="1" android:text="@string/wound_current" android:layout_weight="0.167"/>
+            </TableRow>
+            <TableRow>
+                <com.google.android.material.textfield.TextInputLayout android:textColorHint="@color/colorPrimaryDark" android:id="@+id/wound_input_layout" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="1dp" android:layout_column="0">
+                    <com.google.android.material.textfield.TextInputEditText android:gravity="center" android:id="@+id/wound_input" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="number" android:imeOptions="actionDone"/>
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout android:textColorHint="@color/colorPrimaryDark" android:id="@+id/wound_current_input_layout" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="1dp" android:layout_column="1">
+                    <com.google.android.material.textfield.TextInputEditText android:gravity="center" android:id="@+id/wound_current_input" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="number" android:imeOptions="actionDone"/>
+                </com.google.android.material.textfield.TextInputLayout>
+            </TableRow>
+        </TableLayout>
+        <TableLayout android:id="@+id/strain_table_input" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:stretchColumns="0,1" android:layout_below="@+id/wound_table_input">
+            <TableRow>
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:textColor="@android:color/white" android:gravity="center" android:background="@color/colorPrimary" android:layout_width="0dp" android:layout_margin="1dp" android:layout_column="0" android:text="@string/strain_threshold" android:layout_weight="0.167"/>
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:textColor="@android:color/white" android:gravity="center" android:background="@color/colorPrimaryDark" android:layout_width="0dp" android:layout_margin="1dp" android:layout_column="1" android:text="@string/strain_current" android:layout_weight="0.167"/>
+            </TableRow>
+            <TableRow>
+                <com.google.android.material.textfield.TextInputLayout android:textColorHint="@color/colorPrimaryDark" android:id="@+id/strain_input_layout" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="1dp" android:layout_column="0">
+                    <com.google.android.material.textfield.TextInputEditText android:gravity="center" android:id="@+id/strain_input" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="number" android:imeOptions="actionDone"/>
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout android:textColorHint="@color/colorPrimaryDark" android:id="@+id/strain_current_input_layout" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="1dp" android:layout_column="1">
+                    <com.google.android.material.textfield.TextInputEditText android:gravity="center" android:id="@+id/strain_current_input" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="number" android:imeOptions="actionDone"/>
+                </com.google.android.material.textfield.TextInputLayout>
+            </TableRow>
+        </TableLayout>
+        <TextView android:textSize="20sp" android:textStyle="bold" android:textColor="@android:color/black" android:gravity="center" android:id="@+id/notes_input_head" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/notes" android:layout_below="@+id/strain_table_input"/>
+        <EditText android:gravity="top|left|center_vertical|center_horizontal|center|start" android:id="@+id/notes_input" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:ems="10" android:layout_below="@+id/notes_input_head" android:inputType="textMultiLine"/>
+    </RelativeLayout>
+</ScrollView>

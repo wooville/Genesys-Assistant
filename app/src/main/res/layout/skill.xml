@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:padding="8dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="4dp">
+        <Button android:id="@+id/delete_skill_btn" android:background="@android:drawable/ic_delete" android:layout_width="30dp" android:layout_height="30dp" android:layout_alignParentLeft="true"/>
+        <com.google.android.material.textfield.TextInputLayout android:textSize="20sp" android:textStyle="bold" android:textColor="@android:color/black" android:id="@+id/skillNameLayout" android:layout_width="wrap_content" android:layout_height="50dp" android:layout_marginLeft="40dp" android:layout_alignParentTop="true">
+            <com.google.android.material.textfield.TextInputEditText android:id="@+id/skillNameInput" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="Skill Name" android:inputType="text"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <androidx.appcompat.widget.AppCompatCheckBox android:id="@+id/checkboxCareer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="80dp" android:layout_alignParentTop="true" android:layout_alignParentRight="true"/>
+        <Spinner android:gravity="center" android:id="@+id/skillRankInput" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true"/>
+        <Spinner android:gravity="center" android:id="@+id/skillAttributeInput" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_below="@+id/skillRankInput" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

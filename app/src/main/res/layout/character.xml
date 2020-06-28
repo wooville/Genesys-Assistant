@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp" app:cardBackgroundColor="@color/colorPrimary" app:cardCornerRadius="10dp">
+    <RelativeLayout android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="4dp">
+        <TextView android:textSize="20sp" android:textStyle="bold" android:textColor="@android:color/white" android:id="@+id/charNameView" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Character Name" android:layout_alignParentTop="true"/>
+        <TextView android:textSize="15sp" android:textStyle="normal|bold|italic" android:textColor="@android:color/white" android:id="@+id/archetypeView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25dp" android:text="Archetype" android:layout_below="@+id/charNameView"/>
+        <TextView android:textSize="15sp" android:textStyle="normal|bold|italic" android:textColor="@android:color/white" android:id="@+id/careerView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25dp" android:text="Career" android:layout_below="@+id/archetypeView"/>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
