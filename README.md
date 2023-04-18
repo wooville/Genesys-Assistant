@@ -1,7 +1,7 @@
 # Genesys-Assistant
 Android app on the Google Play store. A character creation tool for the tabletop RPG Genesys.
 
-Regretfully, I published this project to Google Play a little bit underbaked/undertested as the school year was starting and I no longer had time to work on it. I had good intentions of fixing it after the fact but honestly have not been able to make it a priority up to this point due to school and co-op. There are a few nasty crashes and the skill list implementation could definitely be improved. I'm still very proud of the overall layout and work I put into it, and I learned a lot making it! Maybe someday...
+Regretfully, I published this project to Google Play a little bit underbaked/undertested as the school year was starting and I no longer had time to work on it. I had good intentions of fixing it after the fact but honestly have not been able to make it a priority up to this point due to school and co-op. There are a few nasty crashes and the skill list implementation could definitely be improved. There are some aesthetic changes I'd consider making as well. I'm still very proud of the overall layout and work I put into it, and I learned a lot making it! Maybe someday...
 
 If you're looking for a great digital character manager for Genesys, [Genesys Emporium by SkyJedi](https://genesysemporium.com/) is a marvelous and robust web-based solution.
 
